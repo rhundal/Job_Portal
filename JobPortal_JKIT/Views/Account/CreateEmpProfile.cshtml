@@ -1,0 +1,114 @@
+﻿@model JobPortal_JKIT.Models.Employer
+@{
+    ViewBag.Title = "Create Employer Profile";
+}
+
+<br />
+<h2>@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4> Employer Details </h4>
+    <hr />
+    @Html.ValidationSummary("", new { @class = "text-danger" })
+
+
+    <br />
+    <div class="jumbotron">
+
+        <h4>Create Recruiter Profile. </h4>
+        <table class="table table-hover table-inverse" width="50" border="0">
+
+            <tbody>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputName2" class="control-label"> First Name</label></td>
+                    <td width="20%" align="left"><input type="text" class="spacing" id="exampleInputName2" placeholder="Jane"></td>
+                    <td width="10%" align="left"><label for="exampleInputName2" class="control-label lspacing"> Last Name</label></td>
+                    <td width="60%" align="left"><input type="text" class="spacing" id="exampleInputName2" placeholder="Doe"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">Email</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="jane.doe@example.com"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">Mobile</label></td>
+                    <td width="60%" align="left"><input class=" spacing" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input"></td>
+                </tr>
+
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">Location</label></td>
+                    <td width="20%" align="left"><input type="text" class="spacing" id="exampleInputName2" placeholder="Jane"></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+        <br />
+        <h4> Professional Details </h4>
+        <br />
+        <table class="table table-hover table-inverse" border="0">
+
+            <tbody>
+
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputName2" class="control-label"> Company </label></td>
+                    <td width="20%" align="left"><input type="text" class="spacing" id="exampleInputName2" placeholder="Current Company Name"></td>
+                    <td width="10%" align="left"><label for="exampleInputName2" class="control-label lspacing">  Designation </label></td>
+                    <td width="70%" align="left"><input type="text" class="spacing" id="exampleInputName2" placeholder="Current Designation"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">From</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="From"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">To</label></td>
+                    <td width="70%" align="left"><input class=" spacing" type="tel" placeholder="To" id="example-tel-input"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">Address 1</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="Address Line 1"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">Address 2</label></td>
+                    <td width="70%" align="left"><input class=" spacing" type="tel" placeholder="Address Line 2" id="example-tel-input"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">City</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="City"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">State</label></td>
+                    <td width="70%" align="left"><input class=" spacing" type="tel" placeholder="State" id="example-tel-input"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">ZipCode</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="ZipCode"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">Country</label></td>
+                    <td width="70%" align="left"><input class=" spacing" type="tel" placeholder="Country" id="example-tel-input"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">Total Exp</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="Total Exp in hiring"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">Level I Hire</label></td>
+                    <td width="70%" align="left"><input class=" spacing" type="tel" placeholder="Level I hire for" id="example-tel-input"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">Industry</label></td>
+                    <td width="20%" align="left"><input type="email" class="spacing" id="exampleInputEmail2" placeholder="Industry"></td>
+                    <td width="10%" align="left"><label for="example-tel-input" class="control-label lspacing">Function</label></td>
+                    <td width="70%" align="left"><input class=" spacing" type="tel" placeholder="Function" id="example-tel-input"></td>
+                </tr>
+                <tr>
+                    <td width="10%" align="left"><label for="exampleInputEmail2" class="control-label">Skills I Hire</label></td>
+                    <td width="20%" align="left"><input type="text" class="spacing" id="exampleInputName2" placeholder="Skills I hire For"></td>
+                </tr>
+
+            </tbody>
+
+        </table>
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        }
+@*
+
+        @section Scripts {
+            @Scripts.Render("~/bundles/jqueryval")
+        }
+
+    *@
+

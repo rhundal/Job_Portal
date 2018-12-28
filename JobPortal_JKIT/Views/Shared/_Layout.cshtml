@@ -1,0 +1,248 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - JK IT Job Portal </title>
+
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+
+ @*@Styles.Render("~/Content/")      // bundling and minification
+    @Scripts.Render("~/bundles/modernizr") *@   
+
+</head>
+<body>
+    <div class="toparea">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("JKIT Job Portal", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="middleMenu">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                @* @Html.ActionLink("Jobs", "Index", "Home") *@
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown close-modal">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Jobs">
+                                            <i class="fa fa-tasks"></i> Jobs
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class=" dropdown dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="advJS">
+                                                    <i class="fa "></i> Advanced Job Search
+                                                </a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="advJS">
+                                                    <i class="fa "></i> Jobs By Location
+                                                </a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="advJS">
+                                                    <i class="fa "></i> Jobs By Industry
+                                                </a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="advJS">
+                                                    <i class="fa "></i> Jobs By Function
+                                                </a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="advJS">
+                                                    <i class="fa "></i> Jobs By Company
+                                                </a>
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="advJS">
+                                                    <i class="fa "></i> Jobs By Skills
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="nav navbar-nav">
+                                    <li class="dropdown close-modal">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Каталог">
+                                            <i class="fa fa-home"></i> My Jobster
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class=" dropdown dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Ламинат в Уфе">
+                                                    <i class="fa "></i> menu 1
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="last">
+                                                        <a href="/katalog/laminat/alloc.html" title="Alloc">Allocate</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown close-modal">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Каталог">
+                                            <i class="fa fa-tasks"></i> Career Resources
+                                            <b class="caret"></b>
+
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li class=" dropdown dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Ламинат в Уфе">
+                                                    <i class="fa "></i> Topic
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="last">
+                                                        <a href="/katalog/laminat/alloc.html" title="Alloc">Allocate</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class=" dropdown dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Массивная доска в Уфе">
+                                                    <i class="fa "></i> Hello
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="">
+                                                        <a href="/katalog/massivnaya-doska/farecom_superbase.html" title="Farecom Superbase (Россия, Москва)">
+                                                            Superbase
+                                                        </a>
+                                                    </li>
+                                                    <li class="">
+                                                        <a href="/katalog/massivnaya-doska/smartfloor.html" title="SmartFloor">
+                                                            SmartFloor
+                                                        </a>
+                                                    </li>
+                                                    <li class="last">
+                                                        <a href="/katalog/massivnaya-doska/corona_exotic.html" title="Exotic">
+                                                            Exotic
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class=" dropdown dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="title 5">
+                                                    <i class="fa "></i> Some label 2
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="">
+                                                        <a href="/katalog/parketnaya-doska/baum-parkett.html" title="title 4">
+                                                            Some label
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a href="#" title="Штучный паркет в Уфе">
+                                                    menu 6
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#" title="Художественный паркет">
+                                                    menu 5
+                                                </a>
+                                            </li>
+                                            <li class=" dropdown dropdown-submenu">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="title3">
+                                                    <i class="fa "></i> menu 4
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li class="last">
+                                                        <a href="/katalog/probka/corkart.html" title="Corkart">
+                                                            menu 3
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="">
+                                                <a href="/katalog/parketnyie-rabotyi.html" title="title 2">
+                                                    Test 3
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/katalog/parketnaya-ximiya-kleya-laki-masla.html" title="title 1">
+                                                    Test 2
+                                                </a>
+                                            </li>
+                                            <li class="last">
+                                                <a href="/katalog/nivelir-lagi.html" title="Нивелир лаги">
+                                                    Test 1
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>@Html.ActionLink("About", "About", "Home")</li>
+                            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        </ul>
+                        @Html.Partial("_LoginPartial")
+                    </div>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav"></ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                @* add a jumbotron *@
+                @* horizontal line *@
+                <div class="jumbotron">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="txtClass">
+
+                                <h2> Col 1 </h2>
+                                <p> list 1 </p>
+                                <p> list 2 </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="txtClass">
+
+                                <h2> Col 2 </h2>
+                                <p> list 1</p>
+                                <p> list 2 </p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <div class="txtClass">
+
+                                <h2> Column 3 </h2>
+                                <p> list 1</p>
+                                <p> list 2</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="txtClass">
+
+                                <h2> Column 4 </h2>
+                                <p> list 1</p>
+                                <p> list 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row">
+                    <div class="bg-faded">
+                        <div class="text-center">
+                            <p>&copy; @DateTime.Now.Year - Welcome To JKIT Solutions | Developed By Rajdeep Hundal. </p>
+
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+﻿@* @model JobPortal.Models.FrontEndElements  *@
+@*
+    @using System.Web.Mvc;
+*@
+@{
+    ViewBag.Title = "Job Search | Jobster";
+}
+
+<div class="jumbotron">
+    <p class="lead"> Welcome to Jobster </p>
+
+    <h4> Search Jobs </h4>
+    @*
+        @Html.DropDownList("JobExperience", new SelectList(Enum.GetValues(typeof(JobPortal.Models.Years))), "Exp(Years)", new { @class = "form-control"})
+    *@
+
+    <!-- Example single danger button -->
+    <form class="form-inline">
+        <div class="row">
+            <div class="col-homeinline">
+                <div class="input-group txtFieldWidth">
+                    <input type="text" class="form-control" placeholder="Job Title, Keywords, Company">
+                </div> <!--end of input-group--> &nbsp;
+
+                <div class="btn-group customTop customComponents">
+                    <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Exp(Years)
+                    </button>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item"> &nbsp;0 </a> <br />
+                        <a class="dropdown-item"> &nbsp;1 </a> <br />
+                        <a class="dropdown-item"> &nbsp;2 </a> <br />
+                        <a class="dropdown-item"> &nbsp;3 </a> <br />
+                        <a class="dropdown-item"> &nbsp;4 </a> <br />
+                        <a class="dropdown-item"> &nbsp;5 </a> <br />
+                        <a class="dropdown-item"> &nbsp;6 </a> <br />
+                        <a class="dropdown-item"> &nbsp;7 </a> <br />
+                        <a class="dropdown-item"> &nbsp;8 </a> <br />
+                        <a class="dropdown-item"> &nbsp;9 </a> <br />
+                        <a class="dropdown-item"> &nbsp;10 </a> <br />
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">&nbsp; Above 10 &nbsp;</a>
+                    </div>
+                </div>  <!-- end of button group--> &nbsp;
+                <input type="text" class="form-control customComponents2 customTop" placeholder="Location"> &nbsp;
+                <button class="btn btn-warning customComponents customTop" type="button">Search!</button> &nbsp;
+            @*<button class="btn btn-primary customAdv" type="button" onclick="@Html.ActionLink("Advanced >>>>", "Advanced", "Home")"></button> *@    
+                @Html.ActionLink("Advanced >>>>", "Advanced", "Home")
+            </div>
+        </div>
+    </form>
+</div>
+     
+    <br />
+ <!--    <p><a href="" class="btn btn-primary btn-lg">  New Jobs &raquo;</a></p> -->
+<div class="jumbotron">
+    <div class="row">
+    @*    <div class="col-inline"> *@
+            <div class="col-md-custom">
+                <div class="txtClass">
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="bg-primary text-danger">Top Jobs</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                        <h4 class="list-group-item-heading"> Asp .Net Developer </h4>
+                                        <p class="list-group-item-text"> Job Description </p>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h4 class="list-group-item-heading"> Software Engineer </h4>
+                                        <p class="list-group-item-text"> Job Description </p>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h4 class="list-group-item-heading"> Php Developer </h4>
+                                        <p class="list-group-item-text"> Job Description </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="txtClass">
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="bg-primary text-danger">Company Jobs</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                        <h4 class="list-group-item-heading">List group item heading</h4>
+                                        <p class="list-group-item-text"> Job Description  </p>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h4 class="list-group-item-heading">List group item heading</h4>
+                                        <p class="list-group-item-text"> Job Description  </p>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h4 class="list-group-item-heading">List group item heading</h4>
+                                        <p class="list-group-item-text"> Job Description  </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="txtClass">
+                    <div class="col-md-4">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="bg-primary text-danger">Column 3</h3>
+                            </div>
+                            <div class="panel-body">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                        <h4 class="list-group-item-heading">List group item heading</h4>
+                                        <p class="list-group-item-text"> Job Description </p>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h4 class="list-group-item-heading">List group item heading</h4>
+                                        <p class="list-group-item-text"> Job Description</p>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <h4 class="list-group-item-heading">List group item heading</h4>
+                                        <p class="list-group-item-text"> Job Description </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             </div>
+    @*    </div> *@
+    </div>
+ </div>   

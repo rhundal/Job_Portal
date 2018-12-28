@@ -1,0 +1,116 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  /*  max-width: 280px; */
+}
+.rspacing {
+    margin-left: 30px;
+}
+.midSpacing {
+    margin-left: -40px;
+}
+.leftSpacing {
+    margin-left: -10px;
+}
+
+.lspacing {
+    margin-left: 5px;
+}
+.spacing
+{
+    margin-left: 5px;
+}
+.txtClass{
+    color: black;
+    text-align: center;
+}
+.col-customwidth {
+    width: 2000px;
+
+}
+.bttnwid {
+    width: 50%;
+    background-color: orange;
+}
+
+.col-homeinline{
+  /*  width: 1000px; */
+    display: inline;
+
+}
+.col-inline{
+    width: 2000px;
+}
+.col-md-custom
+{
+   width: 100%;
+}
+.toparea {
+    background-color: dimgrey;
+}
+.middleMenu
+{
+    margin-left: 105px;
+}
+.leftTopMenu
+{
+    margin-left: -100px;
+}
+.txtFieldWidth {
+
+    width: 250px;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+.customComponents {
+
+    margin-left: -10px;
+}
+
+.customAdv2 {
+ /*   margin-left: -90px; */
+    margin-top: 5px;
+    width: 110px;
+    background-color: silver;
+}
+
+.customAdv {
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 180px;
+    background-color: darkmagenta;
+}
+.customComponents2 {
+
+    width: 250px;
+    margin-left: -10px;
+}
+
+.customAdv {
+    margin-top: 5px;
+    margin-left: 40px;
+    
+}
+.customTop {
+        margin-top: 5px;
+
+}
